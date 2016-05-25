@@ -22,6 +22,9 @@
     <Filter Include="Header Files\Utilities">
       <UniqueIdentifier>{79b07dac-1816-42ca-95a5-d71e738e602a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Utilities">
+      <UniqueIdentifier>{22f477a5-dcb4-4374-8b35-9144344c827b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="NetWork\NetAddr.h">
@@ -54,7 +57,7 @@
       <Filter>Source Files\Network</Filter>
     </ClCompile>
     <ClCompile Include="Utility\GGThread.cpp">
-      <Filter>Header Files\Utilities</Filter>
+      <Filter>Source Files\Utilities</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -39,7 +39,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	}
 
 	GGThread thread1(threadtest);
-	thread1.join();
+	
 
 
 	std::unique_ptr<GGNetAddr> pTestAddr( new GGNetAddr(sIP, sPort));

@@ -3,16 +3,20 @@
 
 #include <thread>
 
-class GGThread :public std::thread
+class GGThread 
 {
 	public:
 
 		template<class func, class... args>
-		explicit GGThread(func&& f, args&&... arglist):std::thread(f, arglist...){}
-		virtual ~GGThread(){}
+		explicit GGThread(func&& f, args&&... arglist):_ggthread(f, arglist...){}
+		virtual ~GGThread(){ if (_ggthread.joinable()){ _ggthread.join(); } }
 
 		virtual void Run(){}
 
+
+	private:
+
+		std::thread _ggthread;
 };
 
 
