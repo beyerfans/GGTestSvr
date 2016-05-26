@@ -1,5 +1,4 @@
-#ifndef _GG_NETINIT_H
-#define _GG_NET_INIT
+#pragma once
 
 #include <iostream>
 
@@ -64,4 +63,3 @@ class GGNetInit
 };
 
 
-#endif

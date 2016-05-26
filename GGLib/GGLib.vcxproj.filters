@@ -25,6 +25,12 @@
     <Filter Include="Source Files\Utilities">
       <UniqueIdentifier>{22f477a5-dcb4-4374-8b35-9144344c827b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Platform">
+      <UniqueIdentifier>{768f459b-3910-4c5b-8a9e-67e82dd0391d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Platform">
+      <UniqueIdentifier>{1bd19e7f-cc4c-4077-aa0f-fb155edfce8f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="NetWork\NetAddr.h">
@@ -48,6 +54,9 @@
     <ClInclude Include="Utility\GGThread.h">
       <Filter>Header Files\Utilities</Filter>
     </ClInclude>
+    <ClInclude Include="Platform\GGServer.h">
+      <Filter>Header Files\Platform</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="NetWork\NetAddr.cpp">
@@ -58,6 +67,9 @@
     </ClCompile>
     <ClCompile Include="Utility\GGThread.cpp">
       <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\GGServer.cpp">
+      <Filter>Source Files\Platform</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

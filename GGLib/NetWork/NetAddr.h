@@ -1,5 +1,4 @@
-#ifndef _GG_NET_ADDR
-#define _GG_NET_ADDR
+#pragma once
 
 #include "NetDefine.h"
 #include <string>
@@ -40,4 +39,3 @@ class GGNetAddr
 };
 
 
-#endif

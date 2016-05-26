@@ -1,5 +1,4 @@
-#ifndef _GG_SINGLETON_H
-#define _GG_SINGLETON_H
+#pragma once
 
 template <class T>
 class GGSingleton
@@ -16,4 +15,3 @@ class GGSingleton
 };
 
 
-#endif

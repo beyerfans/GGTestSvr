@@ -38,17 +38,6 @@ GGNetAddr::operator struct sockaddr* () const
 }
 
 
-
-//void GGNetAddr::_SetAddress(string sIP)
-//{
-//		
-//
-//}
-//void GGNetAddr::_SetPort(ggPort usPort)
-//{
-//	m_sockaddr.sin_port = htons(usPort);
-//}
-
 void GGNetAddr::_AssignAddr(const string& rsIP, const string& rsPort)
 {
 	addrinfo *pResult,*pCurrent;

@@ -13,6 +13,8 @@
 #include "../GGLib/Utility/GGSingleton.h"
 #include "../GGLib/Utility/GGThread.h"
 
+#include "ThreadTest.h"
+
 #pragma comment(lib,"../Debug/GGLib.lib")
 
 using namespace std;
@@ -38,11 +40,20 @@ int _tmain(int argc, _TCHAR* argv[])
 		sListenSock.Listen(5);
 	}
 
-	GGThread thread1(threadtest);
+	/*GGThread thread1(threadtest);
 	
+	HANDLE hThread = thread1.Gethandle();*/
 
 
-	std::unique_ptr<GGNetAddr> pTestAddr( new GGNetAddr(sIP, sPort));
+	GGTestThread ggtt;
+
+	GGTestThread* pthread = &ggtt;
+
+	ggtt.RunOnce();
+
+	HANDLE hThread = ggtt.Gethandle();
+
+	//std::unique_ptr<GGNetAddr> pTestAddr( new GGNetAddr(sIP, sPort));
 
 	return 0;
 }

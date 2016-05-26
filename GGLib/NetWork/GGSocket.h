@@ -1,5 +1,4 @@
-#ifndef _GG_SOCKET_H
-#define _GG_SOCKET_H
+#pragma once
 
 #include "NetDefine.h"
 
@@ -21,5 +20,3 @@ class GGSocket
 		SOCKET m_socket;
 };
 
-
-#endif

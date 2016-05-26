@@ -1,5 +1,4 @@
-#ifndef _GG_TCPSOCKET_H
-#define _GG_TCPSOCKET_H
+#pragma once
 
 #include "GGSocket.h"
 #include "NetAddr.h"
@@ -32,4 +31,3 @@ protected:
 	
 };
 
-#endif 

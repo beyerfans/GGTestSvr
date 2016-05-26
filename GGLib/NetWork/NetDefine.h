@@ -1,5 +1,4 @@
-#ifndef _GG_NET_DEFINE
-#define _GG_NET_DEFINE
+#pragma once
 
 
 #ifdef _WIN32
@@ -9,4 +8,3 @@ typedef  u_short ggPort;
 typedef unsigned short ggPort;
 #endif
 
-#endif
