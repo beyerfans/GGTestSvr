@@ -5,7 +5,11 @@
 #include <thread>
 #include <chrono>
 #include <memory>
+
+#ifdef _WIN32
 #include "stdafx.h"
+#endif
+
 #include "string"
 #include "../GGLib/NetWork/NetAddr.h"
 #include "../GGLib/NetWork/GGTCPSocket.h"
@@ -25,9 +29,9 @@ void threadtest()
 }
 
 
-int _tmain(int argc, _TCHAR* argv[])
-{
+int _tmain(int argc, char* argv[])
 
+{
 	GGSingleton<GGNetInit>::GetInstance();
 
 	string sIP("localhost");
@@ -50,6 +54,8 @@ int _tmain(int argc, _TCHAR* argv[])
 	GGTestThread* pthread = &ggtt;
 
 	ggtt.RunOnce();
+	
+	typedef int HANDLE;
 
 	HANDLE hThread = ggtt.Gethandle();
 
