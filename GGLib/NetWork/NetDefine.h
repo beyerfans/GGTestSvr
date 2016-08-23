@@ -6,5 +6,6 @@
 typedef  u_short ggPort;
 #else
 typedef unsigned short ggPort;
+typedef int SOCKET;
 #endif
 

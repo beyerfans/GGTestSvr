@@ -1,15 +1,15 @@
 #pragma once
 
 #include "NetDefine.h"
-#include <string>
-
 #ifdef _WIN32
-//#include <WinSock2.h>
+//#include <string>
 #include <ws2ipdef.h>
 #else
-#include <netdb.h>
+//#include <string>
+#include <netdb.h> 
 #endif
 
+#include <string>   
 using namespace std;
 
 class GGNetAddr
