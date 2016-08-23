@@ -10,7 +10,7 @@ GGNetAddr::GGNetAddr()
 	_InitAddr();
 }
 
-GGNetAddr::GGNetAddr(const string& rsIP, const string& rsPort)
+GGNetAddr::GGNetAddr(const std::string& rsIP, const std::string& rsPort)
 {
 	_InitAddr();
 	_AssignAddr(rsIP,rsPort);
@@ -21,7 +21,7 @@ GGNetAddr::~GGNetAddr()
 	
 }
 
-void GGNetAddr::SetAddr(const string& rsIP, const string& rsPort)
+void GGNetAddr::SetAddr(const std::string& rsIP, const std::string& rsPort)
 {
 	_InitAddr();
 	_AssignAddr(rsIP,rsPort);
@@ -39,7 +39,7 @@ GGNetAddr::operator struct sockaddr* () const
 }
 
 
-void GGNetAddr::_AssignAddr(const string& rsIP, const string& rsPort)
+void GGNetAddr::_AssignAddr(const std::string& rsIP, const std::string& rsPort)
 {
 	addrinfo *pResult,*pCurrent;
 

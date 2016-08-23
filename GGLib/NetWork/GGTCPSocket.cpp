@@ -1,4 +1,5 @@
 #include "GGTCPSocket.h"
+#include <unistd.h>
 
 bool GGTcpSocket::Create()
 {
@@ -16,7 +17,8 @@ bool GGTcpSocket::Bind(GGNetAddr& rAddr)
 	int iRet = bind(m_socket, (sockaddr*)rAddr, sizeof(rAddr));
 	if (iRet == SOCKET_ERROR)
 	{
-		closesocket(m_socket);
+		
+		Close(m_socket);
 		return false;
 	}
 	return true;
@@ -27,7 +29,7 @@ bool GGTcpSocket::Listen(int iBacklog)
 
 	if (iRet == SOCKET_ERROR)
 	{
-		closesocket(m_socket);
+		Close(m_socket);
 		return false;
 	}
 	return true;
@@ -37,7 +39,7 @@ bool GGTcpSocket::Connect(GGNetAddr& rAddr)
 	int iRet = connect(m_socket, (sockaddr*)(rAddr), sizeof(rAddr));
 	if (iRet == SOCKET_ERROR)
 	{
-		closesocket(m_socket);
+		Close(m_socket);
 		return false;
 	}
 	return true;
@@ -47,7 +49,7 @@ bool GGTcpSocket::Accept(GGTcpSocket& rSock)
 	rSock.m_socket= accept(m_socket, NULL, NULL);
 	if (rSock.m_socket == INVALID_SOCKET)
 	{
-		closesocket(m_socket);
+		Close(m_socket);
 		return false;
 	}
 	return true;
@@ -60,3 +62,13 @@ bool GGTcpSocket::Recv()
 {
 	return true;
 }
+
+void GGTcpSocket::Close(SOCKET sockfd)
+{
+	#ifdef _WIN32
+		closesocket(sockfd);
+	#else
+		close(sockfd);
+	#endif
+}
+

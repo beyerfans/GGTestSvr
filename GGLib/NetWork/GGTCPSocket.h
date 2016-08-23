@@ -28,6 +28,8 @@ public:
 
 protected:
 
+	void Close(SOCKET sockfd);
+
 	
 };
 

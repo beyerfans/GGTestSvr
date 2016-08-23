@@ -9,18 +9,19 @@
 #include <netdb.h> 
 #endif
 
-#include <string>   
-using namespace std;
+#include <string>  
+#include <string.h>
+//using namespace std;
 
 class GGNetAddr
 {
 	public:
 
 		GGNetAddr();
-		GGNetAddr(const string& rsIP,const string& rsPort);
+		GGNetAddr(const std::string& rsIP,const std::string& rsPort);
 		virtual ~GGNetAddr();
 
-		void SetAddr(const string& rsIP, const string& rsPort);
+		void SetAddr(const std::string& rsIP, const std::string& rsPort);
 
 		operator struct sockaddr_in* () const;
 		operator struct sockaddr* () const;
@@ -30,7 +31,7 @@ class GGNetAddr
 		void _InitAddr(){ memset(&m_sockaddr, 0, sizeof(m_sockaddr));}
 		/*void _SetAddress(string sIP);
 		void _SetPort(ggPort usPort);*/
-		void _AssignAddr(const string& rsIP, const string& rsPort);
+		void _AssignAddr(const std::string& rsIP, const std::string& rsPort);
 
 		//GGTO: add socket address
 
