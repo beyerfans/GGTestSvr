@@ -15,7 +15,7 @@ class GGTestThread : public GGThread
 		{ 
 			for (int i = 0; i < 10; ++i)
 			{
-				cout << __FUNCTION__ << endl;
+                std::cout << __FUNCTION__ << std::endl;
 			}
 		}
 };

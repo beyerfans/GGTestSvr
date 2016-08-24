@@ -29,7 +29,7 @@ void threadtest()
 }
 
 
-int _tmain(int argc, char* argv[])
+int main( )
 
 {
 	GGSingleton<GGNetInit>::GetInstance();
