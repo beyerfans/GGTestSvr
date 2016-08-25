@@ -19,3 +19,7 @@ bool GGServer::_Accept()
 	return true;
 }
 
+void GGServer::OnConsoleCmd(const std::string& strcmd)
+{
+
+}

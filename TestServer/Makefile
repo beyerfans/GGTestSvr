@@ -1,27 +1,28 @@
-VPATH =./: ../GGLib/NetWork
+#VPATH =../GGLib/NetWork
+NETLIB = ../GGLib/NetWork
 obj = TestServer.o NetAddr.o GGTCPSocket.o
-cc = g++ -std=c++11
+cc = g++ 
+CFLAGS= -std=c++11 -Wall 
+OBJDIR= ./obj
 
+TestServer: TestServer.o
+	cd ../GGLib/NetWork && $(MAKE)
+	$(cc) $(CFLAGS) -o  TestServer $(NETLIB)/*.o TestServer.o
 
-TestServer: NetAddr.o GGTCPSocket.o TestServer.o
-	$(cc) -o  TestServer NetAddr.o GGTCPSocket.o TestServer.o
-
-NetAddr.o:NetAddr.cpp
-	$(cc) -c $<
-	@echo 'NetAddr'     
 
 TestServer.o:TestServer.cpp
-	$(cc) -c $<
-	@echo 'TestServer'
+	$(cc) $(CFLAGS) -c $<
 
-NetAddr.o:NetAddr.cpp
-	$(cc) -c $<
-	@echo 'NetAddr'
+#NetAddr.o:NetAddr.cpp
+#	cd ../GGLib/NetWork && $(MAKE)
+#	$(cc) $(CFLAGS) -c $<
 
-GGTCPSocket.o:GGTCPSocket.cpp
-	$(cc) -c $<
-	@echo 'NetAddr'
+#GGTCPSocket.o:GGTCPSocket.cpp
+#	cd ../GGLib/NetWork && $(MAKE)
+#	$(cc) $(CFLAGS) -c $<
+
 .PHONY : clean
 clean:
-	rm TestServer $(obj)
+	rm TestServer TestServer.o 
+	rm $(NETLIB)/*.o
 	

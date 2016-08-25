@@ -1,0 +1,22 @@
+VPATH =../GGLib/NetWork
+obj = TestServer.o NetAddr.o GGTCPSocket.o
+cc = g++ 
+CFLAGS= -std=c++11 -Wall 
+
+TestServer: NetAddr.o GGTCPSocket.o TestServer.o
+	$(cc) $(CFLAGS) -o  TestServer NetAddr.o GGTCPSocket.o TestServer.o
+
+
+TestServer.o:TestServer.cpp
+	$(cc) $(CFLAGS) -c $<
+
+NetAddr.o:NetAddr.cpp
+	$(cc) $(CFLAGS) -c $<
+
+GGTCPSocket.o:GGTCPSocket.cpp
+	$(cc) $(CFLAGS) -c $<
+
+.PHONY : clean
+clean:
+	rm TestServer $(obj)
+	

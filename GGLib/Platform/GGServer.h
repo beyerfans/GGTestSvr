@@ -20,7 +20,12 @@ class GGServer :public GGThread
 
 
 	protected:
-	
+
+        //TODO: Add console input handling      
+        void OnConsoleCmd(const std::string& cmdstr);
+
+        
+
 		bool _Accept();
 
 		std::list<GGTcpSocket> m_ListenSock;

@@ -16,7 +16,7 @@
 #include "../GGLib/NetWork/GGNetInit.h"
 #include "../GGLib/Utility/GGSingleton.h"
 #include "../GGLib/Utility/GGThread.h"
-
+#include "../GGLib/NetWork/NetDefine.h"
 #include "ThreadTest.h"
 
 #pragma comment(lib,"../Debug/GGLib.lib")
@@ -44,22 +44,10 @@ int main( )
 		sListenSock.Listen(5);
 	}
 
-	/*GGThread thread1(threadtest);
-	
-	HANDLE hThread = thread1.Gethandle();*/
-
-
-	GGTestThread ggtt;
-
-	GGTestThread* pthread = &ggtt;
-
+	GGTestThread ggtt;	
 	ggtt.RunOnce();
-	
-	typedef int HANDLE;
 
-	HANDLE hThread = ggtt.Gethandle();
-
-	//std::unique_ptr<GGNetAddr> pTestAddr( new GGNetAddr(sIP, sPort));
+	HANDLE hThread = ggtt.Gethandle();	
 
 	return 0;
 }
