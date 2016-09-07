@@ -72,3 +72,21 @@ void GGTcpSocket::Close(SOCKET sockfd)
 	#endif
 }
 
+bool GGTcpSocket::SetBlock(bool bBlocking)
+{
+    #ifdef _WIN32
+
+    #else
+    
+    int iflags=fnctl(m_socket,F_GETFL);
+    if(iflags<0)
+    {
+        return false;
+    }    
+    else
+    {
+        iflags=bBlocking?iflags&~O_NONBLOCK:iflags|O_NONBLOCK;
+        return fnctl(m_socket,F_SETFL,iflags)==0?true:false;        
+    }
+    #endif    
+}

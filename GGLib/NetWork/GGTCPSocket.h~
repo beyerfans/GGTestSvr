@@ -17,7 +17,7 @@ public:
 	virtual bool Listen(){ return true; }
 	virtual bool Connect() { return true; }
 
-    bool SetBlock(bool bBlocking);
+
 
 	virtual bool Bind(GGNetAddr& rAddr);
 	virtual bool Listen(int iBacklog);
@@ -25,6 +25,8 @@ public:
 	bool Accept(GGTcpSocket& rSock);
 	bool Send();
 	bool Recv();
+
+protected:
 
 	void Close(SOCKET sockfd);
 
