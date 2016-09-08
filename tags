@@ -5,45 +5,70 @@
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
 $	GGLib/Debug/GGTCPSocket.obj	/^/;"	v	language:C++
-$	tags	/^GGNetInit	GGLib\/NetWork\/GGNetInit.h	\/^		GGNetInit(){ _Initialize(); }$\/;"	f	language:C++	class:GGNetInit	access:public	signature:()$/;"	v	language:C++	typeref:class:__anon18
+$	tags	/^GGNetInit	GGLib\/NetWork\/GGNetInit.h	\/^		GGNetInit(){ _Initialize(); }$\/;"	f	language:C++	class:GGNetInit	access:public	signature:()$/;"	v	language:C++	typeref:class:__anon24
 $	tags	/^GGServer	GGLib\/Platform\/GGServer.h	\/^		GGServer(){}$\/;"	f	language:C++	class:GGServer	access:public	signature:()$/;"	v	language:C++	typeref:class:__anon1
 $	tags	/^GGSingleton	GGLib\/Utility\/GGSingleton.h	\/^		GGSingleton(){}$\/;"	f	language:C++	class:GGSingleton	access:public	signature:()$/;"	v	language:C++	typeref:class:__anon7
-$	tags	/^GGSocket	GGLib\/NetWork\/GGSocket.h	\/^		GGSocket(){}$\/;"	f	language:C++	class:GGSocket	access:public	signature:()$/;"	v	language:C++	typeref:class:__anon9
-$	tags	/^GGTcpSocket::Bind	GGLib\/NetWork\/GGTCPSocket.h	\/^	virtual bool Bind() { return true; }$\/;"	f	language:C++	class:GGTcpSocket	access:public	signature:()$/;"	v	language:C++	typeref:class:__anon15
-$	tags	/^GGTcpSocket::Connect	GGLib\/NetWork\/GGTCPSocket.h	\/^	virtual bool Connect() { return true; }$\/;"	f	language:C++	class:GGTcpSocket	access:public	signature:()$/;"	v	language:C++	typeref:class:__anon17
-$	tags	/^GGTcpSocket::GGTcpSocket	GGLib\/NetWork\/GGTCPSocket.h	\/^	GGTcpSocket(){}$\/;"	f	language:C++	class:GGTcpSocket	access:public	signature:()$/;"	v	language:C++	typeref:class:__anon12
-$	tags	/^GGTcpSocket::Initialize	GGLib\/NetWork\/GGTCPSocket.h	\/^	virtual bool Initialize(){ return true; }$\/;"	f	language:C++	class:GGTcpSocket	access:public	signature:()$/;"	v	language:C++	typeref:class:__anon14
-$	tags	/^GGTcpSocket::Listen	GGLib\/NetWork\/GGTCPSocket.h	\/^	virtual bool Listen(){ return true; }$\/;"	f	language:C++	class:GGTcpSocket	access:public	signature:()$/;"	v	language:C++	typeref:class:__anon16
-$	tags	/^GGTcpSocket::~GGTcpSocket	GGLib\/NetWork\/GGTCPSocket.h	\/^	virtual ~GGTcpSocket(){}$\/;"	f	language:C++	class:GGTcpSocket	access:public	signature:()$/;"	v	language:C++	typeref:class:__anon13
+$	tags	/^GGSocket	GGLib\/NetWork\/GGSocket.h	\/^		GGSocket(){}$\/;"	f	language:C++	class:GGSocket	access:public	signature:()$/;"	v	language:C++	typeref:class:__anon15
+$	tags	/^GGTcpSocket::Bind	GGLib\/NetWork\/GGTCPSocket.h	\/^	virtual bool Bind() { return true; }$\/;"	f	language:C++	class:GGTcpSocket	access:public	signature:()$/;"	v	language:C++	typeref:class:__anon21
+$	tags	/^GGTcpSocket::Bind	GGLib\/NetWork\/GGTCPSocket.h~	\/^	virtual bool Bind() { return true; }$\/;"	f	language:C++	class:GGTcpSocket	access:public	signature:()$/;"	v	language:C++	typeref:class:__anon12
+$	tags	/^GGTcpSocket::Connect	GGLib\/NetWork\/GGTCPSocket.h	\/^	virtual bool Connect() { return true; }$\/;"	f	language:C++	class:GGTcpSocket	access:public	signature:()$/;"	v	language:C++	typeref:class:__anon23
+$	tags	/^GGTcpSocket::Connect	GGLib\/NetWork\/GGTCPSocket.h~	\/^	virtual bool Connect() { return true; }$\/;"	f	language:C++	class:GGTcpSocket	access:public	signature:()$/;"	v	language:C++	typeref:class:__anon14
+$	tags	/^GGTcpSocket::GGTcpSocket	GGLib\/NetWork\/GGTCPSocket.h	\/^	GGTcpSocket(){}$\/;"	f	language:C++	class:GGTcpSocket	access:public	signature:()$/;"	v	language:C++	typeref:class:__anon18
+$	tags	/^GGTcpSocket::GGTcpSocket	GGLib\/NetWork\/GGTCPSocket.h~	\/^	GGTcpSocket(){}$\/;"	f	language:C++	class:GGTcpSocket	access:public	signature:()$/;"	v	language:C++	typeref:class:__anon9
+$	tags	/^GGTcpSocket::Initialize	GGLib\/NetWork\/GGTCPSocket.h	\/^	virtual bool Initialize(){ return true; }$\/;"	f	language:C++	class:GGTcpSocket	access:public	signature:()$/;"	v	language:C++	typeref:class:__anon20
+$	tags	/^GGTcpSocket::Initialize	GGLib\/NetWork\/GGTCPSocket.h~	\/^	virtual bool Initialize(){ return true; }$\/;"	f	language:C++	class:GGTcpSocket	access:public	signature:()$/;"	v	language:C++	typeref:class:__anon11
+$	tags	/^GGTcpSocket::Listen	GGLib\/NetWork\/GGTCPSocket.h	\/^	virtual bool Listen(){ return true; }$\/;"	f	language:C++	class:GGTcpSocket	access:public	signature:()$/;"	v	language:C++	typeref:class:__anon22
+$	tags	/^GGTcpSocket::Listen	GGLib\/NetWork\/GGTCPSocket.h~	\/^	virtual bool Listen(){ return true; }$\/;"	f	language:C++	class:GGTcpSocket	access:public	signature:()$/;"	v	language:C++	typeref:class:__anon13
+$	tags	/^GGTcpSocket::~GGTcpSocket	GGLib\/NetWork\/GGTCPSocket.h	\/^	virtual ~GGTcpSocket(){}$\/;"	f	language:C++	class:GGTcpSocket	access:public	signature:()$/;"	v	language:C++	typeref:class:__anon19
+$	tags	/^GGTcpSocket::~GGTcpSocket	GGLib\/NetWork\/GGTCPSocket.h~	\/^	virtual ~GGTcpSocket(){}$\/;"	f	language:C++	class:GGTcpSocket	access:public	signature:()$/;"	v	language:C++	typeref:class:__anon10
 $	tags	/^GGThread::GGThread	GGLib\/Utility\/GGThread.h	\/^		GGThread():m_ggthread(){  }$\/;"	f	language:C++	class:GGThread	access:public	signature:()$/;"	v	language:C++	typeref:class:__anon4
 $	tags	/^GGThread::GGThread	GGLib\/Utility\/GGThread.h	\/^		explicit GGThread(func&& f, args&&... arglist):m_ggthread(f, arglist...){}$\/;"	f	language:C++	class:GGThread	access:public	signature:(func&& f, args&&... arglist)$/;"	v	language:C++	typeref:class:__anon3
 $	tags	/^GGThread::Gethandle	GGLib\/Utility\/GGThread.h	\/^		std::thread::native_handle_type Gethandle(){ return m_ggthread.native_handle(); }$\/;"	f	language:C++	class:GGThread	access:public	signature:()$/;"	v	language:C++	typeref:class:__anon6
 $	tags	/^GGThread::~GGThread	GGLib\/Utility\/GGThread.h	\/^		virtual ~GGThread(){ if (m_ggthread.joinable()){ m_ggthread.join(); } }$\/;"	f	language:C++	class:GGThread	access:public	signature:()$/;"	v	language:C++	typeref:class:__anon5
-$	tags	/^_InitAddr	GGLib\/NetWork\/NetAddr.h	\/^		void _InitAddr(){ memset(&m_sockaddr, 0, sizeof(m_sockaddr));}$\/;"	f	language:C++	class:GGNetAddr	access:protected	signature:()$/;"	v	language:C++	typeref:class:__anon11
-$	tags	/^~GGNetInit	GGLib\/NetWork\/GGNetInit.h	\/^		virtual ~GGNetInit(){ _CleanUp(); }$\/;"	f	language:C++	class:GGNetInit	access:public	signature:()$/;"	v	language:C++	typeref:class:__anon19
+$	tags	/^_InitAddr	GGLib\/NetWork\/NetAddr.h	\/^		void _InitAddr(){ memset(&m_sockaddr, 0, sizeof(m_sockaddr));}$\/;"	f	language:C++	class:GGNetAddr	access:protected	signature:()$/;"	v	language:C++	typeref:class:__anon17
+$	tags	/^~GGNetInit	GGLib\/NetWork\/GGNetInit.h	\/^		virtual ~GGNetInit(){ _CleanUp(); }$\/;"	f	language:C++	class:GGNetInit	access:public	signature:()$/;"	v	language:C++	typeref:class:__anon25
 $	tags	/^~GGServer	GGLib\/Platform\/GGServer.h	\/^		virtual ~GGServer(){}$\/;"	f	language:C++	class:GGServer	access:public	signature:()$/;"	v	language:C++	typeref:class:__anon2
 $	tags	/^~GGSingleton	GGLib\/Utility\/GGSingleton.h	\/^		virtual ~GGSingleton(){}$\/;"	f	language:C++	class:GGSingleton	access:public	signature:()$/;"	v	language:C++	typeref:class:__anon8
-$	tags	/^~GGSocket	GGLib\/NetWork\/GGSocket.h	\/^		virtual ~GGSocket(){}$\/;"	f	language:C++	class:GGSocket	access:public	signature:()$/;"	v	language:C++	typeref:class:__anon10
+$	tags	/^~GGSocket	GGLib\/NetWork\/GGSocket.h	\/^		virtual ~GGSocket(){}$\/;"	f	language:C++	class:GGSocket	access:public	signature:()$/;"	v	language:C++	typeref:class:__anon16
 A	TestServer/Debug/vc120.idb	/^/;"	v	language:C++
 Accept	GGLib/NetWork/GGTCPSocket.cpp	/^bool GGTcpSocket::Accept(GGTcpSocket& rSock)$/;"	f	language:C++	class:GGTcpSocket	signature:(GGTcpSocket& rSock)
+Accept	GGLib/NetWork/GGTCPSocket.cpp~	/^bool GGTcpSocket::Accept(GGTcpSocket& rSock)$/;"	f	language:C++	class:GGTcpSocket	signature:(GGTcpSocket& rSock)
 Accept	GGLib/NetWork/GGTCPSocket.h	/^	bool Accept(GGTcpSocket& rSock);$/;"	p	language:C++	class:GGTcpSocket	access:public	signature:(GGTcpSocket& rSock)
+Accept	GGLib/NetWork/GGTCPSocket.h~	/^	bool Accept(GGTcpSocket& rSock);$/;"	p	language:C++	class:GGTcpSocket	file:	access:public	signature:(GGTcpSocket& rSock)
 AddListen	GGLib/Platform/GGServer.cpp	/^bool GGServer::AddListen()$/;"	f	language:C++	class:GGServer	signature:()
 AddListen	GGLib/Platform/GGServer.h	/^		bool AddListen();$/;"	p	language:C++	class:GGServer	access:public	signature:()
 B	Debug/TestServer.pdb	/^/;"	v	language:C++
 Bind	GGLib/NetWork/GGSocket.h	/^		virtual bool Bind() = 0;$/;"	p	language:C++	class:GGSocket	access:public	signature:()
 Bind	GGLib/NetWork/GGTCPSocket.cpp	/^bool GGTcpSocket::Bind(GGNetAddr& rAddr)$/;"	f	language:C++	class:GGTcpSocket	signature:(GGNetAddr& rAddr)
+Bind	GGLib/NetWork/GGTCPSocket.cpp~	/^bool GGTcpSocket::Bind(GGNetAddr& rAddr)$/;"	f	language:C++	class:GGTcpSocket	signature:(GGNetAddr& rAddr)
 Bind	GGLib/NetWork/GGTCPSocket.h	/^	virtual bool Bind() { return true; }$/;"	f	language:C++	class:GGTcpSocket	access:public	signature:()
 Bind	GGLib/NetWork/GGTCPSocket.h	/^	virtual bool Bind(GGNetAddr& rAddr);$/;"	p	language:C++	class:GGTcpSocket	access:public	signature:(GGNetAddr& rAddr)
+Bind	GGLib/NetWork/GGTCPSocket.h~	/^	virtual bool Bind() { return true; }$/;"	f	language:C++	class:GGTcpSocket	access:public	signature:()
+Bind	GGLib/NetWork/GGTCPSocket.h~	/^	virtual bool Bind(GGNetAddr& rAddr);$/;"	p	language:C++	class:GGTcpSocket	file:	access:public	signature:(GGNetAddr& rAddr)
 Close	GGLib/NetWork/GGTCPSocket.cpp	/^void GGTcpSocket::Close(SOCKET sockfd)$/;"	f	language:C++	class:GGTcpSocket	signature:(SOCKET sockfd)
-Close	GGLib/NetWork/GGTCPSocket.h	/^	void Close(SOCKET sockfd);$/;"	p	language:C++	class:GGTcpSocket	access:protected	signature:(SOCKET sockfd)
+Close	GGLib/NetWork/GGTCPSocket.cpp~	/^void GGTcpSocket::Close(SOCKET sockfd)$/;"	f	language:C++	class:GGTcpSocket	signature:(SOCKET sockfd)
+Close	GGLib/NetWork/GGTCPSocket.h	/^	void Close(SOCKET sockfd);$/;"	p	language:C++	class:GGTcpSocket	access:public	signature:(SOCKET sockfd)
+Close	GGLib/NetWork/GGTCPSocket.h~	/^	void Close(SOCKET sockfd);$/;"	p	language:C++	class:GGTcpSocket	file:	access:protected	signature:(SOCKET sockfd)
 Connect	GGLib/NetWork/GGSocket.h	/^		virtual bool Connect() = 0;$/;"	p	language:C++	class:GGSocket	access:public	signature:()
 Connect	GGLib/NetWork/GGTCPSocket.cpp	/^bool GGTcpSocket::Connect(GGNetAddr& rAddr)$/;"	f	language:C++	class:GGTcpSocket	signature:(GGNetAddr& rAddr)
+Connect	GGLib/NetWork/GGTCPSocket.cpp~	/^bool GGTcpSocket::Connect(GGNetAddr& rAddr)$/;"	f	language:C++	class:GGTcpSocket	signature:(GGNetAddr& rAddr)
 Connect	GGLib/NetWork/GGTCPSocket.h	/^	virtual bool Connect() { return true; }$/;"	f	language:C++	class:GGTcpSocket	access:public	signature:()
 Connect	GGLib/NetWork/GGTCPSocket.h	/^	virtual bool Connect(GGNetAddr& rAddr);$/;"	p	language:C++	class:GGTcpSocket	access:public	signature:(GGNetAddr& rAddr)
+Connect	GGLib/NetWork/GGTCPSocket.h~	/^	virtual bool Connect() { return true; }$/;"	f	language:C++	class:GGTcpSocket	access:public	signature:()
+Connect	GGLib/NetWork/GGTCPSocket.h~	/^	virtual bool Connect(GGNetAddr& rAddr);$/;"	p	language:C++	class:GGTcpSocket	file:	access:public	signature:(GGNetAddr& rAddr)
+Create	GGLib/NetWork/GGEpollSession.h	/^        int Create();$/;"	p	language:C++	class:GGEpollSession	access:protected	signature:()
 Create	GGLib/NetWork/GGSocket.h	/^		virtual bool Create()=0;$/;"	p	language:C++	class:GGSocket	access:public	signature:()
 Create	GGLib/NetWork/GGTCPSocket.cpp	/^bool GGTcpSocket::Create()$/;"	f	language:C++	class:GGTcpSocket	signature:()
+Create	GGLib/NetWork/GGTCPSocket.cpp~	/^bool GGTcpSocket::Create()$/;"	f	language:C++	class:GGTcpSocket	signature:()
 Create	GGLib/NetWork/GGTCPSocket.h	/^	virtual bool Create();$/;"	p	language:C++	class:GGTcpSocket	access:public	signature:()
+Create	GGLib/NetWork/GGTCPSocket.h~	/^	virtual bool Create();$/;"	p	language:C++	class:GGTcpSocket	file:	access:public	signature:()
 File	GGLib.sln	/^Microsoft Visual Studio Solution File, Format Version 12.00$/;"	v	language:C++
+GGEpollSession	GGLib/NetWork/GGEpollSession.h	/^         GGEpollSession();$/;"	p	language:C++	class:GGEpollSession	access:public	signature:()
+GGEpollSession	GGLib/NetWork/GGEpollSession.h	/^class GGEpollSession$/;"	c	language:C++
+GGEpollSession::Create	GGLib/NetWork/GGEpollSession.h	/^        int Create();$/;"	p	language:C++	class:GGEpollSession	access:protected	signature:()
+GGEpollSession::GGEpollSession	GGLib/NetWork/GGEpollSession.h	/^         GGEpollSession();$/;"	p	language:C++	class:GGEpollSession	access:public	signature:()
+GGEpollSession::epoll_fd	GGLib/NetWork/GGEpollSession.h	/^       int epoll_fd;$/;"	m	language:C++	class:GGEpollSession	access:private
+GGEpollSession::~GGEpollSession	GGLib/NetWork/GGEpollSession.h	/^         ~GGEpollSession();$/;"	p	language:C++	class:GGEpollSession	access:public	signature:()
 GGNetAddr	GGLib/NetWork/NetAddr.cpp	/^GGNetAddr::GGNetAddr()$/;"	f	language:C++	class:GGNetAddr	signature:()
 GGNetAddr	GGLib/NetWork/NetAddr.cpp	/^GGNetAddr::GGNetAddr(const std::string& rsIP, const std::string& rsPort)$/;"	f	language:C++	class:GGNetAddr	signature:(const std::string& rsIP, const std::string& rsPort)
 GGNetAddr	GGLib/NetWork/NetAddr.h	/^		GGNetAddr();$/;"	p	language:C++	class:GGNetAddr	access:public	signature:()
@@ -111,28 +136,55 @@ GGSocket::m_socket	GGLib/NetWork/GGSocket.h	/^		SOCKET m_socket;$/;"	m	language:
 GGSocket::~GGSocket	GGLib/NetWork/GGSocket.h	/^		virtual ~GGSocket(){}$/;"	f	language:C++	class:GGSocket	access:public	signature:()
 GGTcpSocket	GGLib/NetWork/GGTCPSocket.h	/^	GGTcpSocket(){}$/;"	f	language:C++	class:GGTcpSocket	access:public	signature:()
 GGTcpSocket	GGLib/NetWork/GGTCPSocket.h	/^class GGTcpSocket :public GGSocket$/;"	c	language:C++	inherits:GGSocket
+GGTcpSocket	GGLib/NetWork/GGTCPSocket.h~	/^	GGTcpSocket(){}$/;"	f	language:C++	class:GGTcpSocket	access:public	signature:()
+GGTcpSocket	GGLib/NetWork/GGTCPSocket.h~	/^class GGTcpSocket :public GGSocket$/;"	c	language:C++	file:	inherits:GGSocket
 GGTcpSocket::Accept	GGLib/NetWork/GGTCPSocket.cpp	/^bool GGTcpSocket::Accept(GGTcpSocket& rSock)$/;"	f	language:C++	class:GGTcpSocket	signature:(GGTcpSocket& rSock)
+GGTcpSocket::Accept	GGLib/NetWork/GGTCPSocket.cpp~	/^bool GGTcpSocket::Accept(GGTcpSocket& rSock)$/;"	f	language:C++	class:GGTcpSocket	signature:(GGTcpSocket& rSock)
 GGTcpSocket::Accept	GGLib/NetWork/GGTCPSocket.h	/^	bool Accept(GGTcpSocket& rSock);$/;"	p	language:C++	class:GGTcpSocket	access:public	signature:(GGTcpSocket& rSock)
+GGTcpSocket::Accept	GGLib/NetWork/GGTCPSocket.h~	/^	bool Accept(GGTcpSocket& rSock);$/;"	p	language:C++	class:GGTcpSocket	file:	access:public	signature:(GGTcpSocket& rSock)
 GGTcpSocket::Bind	GGLib/NetWork/GGTCPSocket.cpp	/^bool GGTcpSocket::Bind(GGNetAddr& rAddr)$/;"	f	language:C++	class:GGTcpSocket	signature:(GGNetAddr& rAddr)
+GGTcpSocket::Bind	GGLib/NetWork/GGTCPSocket.cpp~	/^bool GGTcpSocket::Bind(GGNetAddr& rAddr)$/;"	f	language:C++	class:GGTcpSocket	signature:(GGNetAddr& rAddr)
 GGTcpSocket::Bind	GGLib/NetWork/GGTCPSocket.h	/^	virtual bool Bind() { return true; }$/;"	f	language:C++	class:GGTcpSocket	access:public	signature:()
 GGTcpSocket::Bind	GGLib/NetWork/GGTCPSocket.h	/^	virtual bool Bind(GGNetAddr& rAddr);$/;"	p	language:C++	class:GGTcpSocket	access:public	signature:(GGNetAddr& rAddr)
+GGTcpSocket::Bind	GGLib/NetWork/GGTCPSocket.h~	/^	virtual bool Bind() { return true; }$/;"	f	language:C++	class:GGTcpSocket	access:public	signature:()
+GGTcpSocket::Bind	GGLib/NetWork/GGTCPSocket.h~	/^	virtual bool Bind(GGNetAddr& rAddr);$/;"	p	language:C++	class:GGTcpSocket	file:	access:public	signature:(GGNetAddr& rAddr)
 GGTcpSocket::Close	GGLib/NetWork/GGTCPSocket.cpp	/^void GGTcpSocket::Close(SOCKET sockfd)$/;"	f	language:C++	class:GGTcpSocket	signature:(SOCKET sockfd)
-GGTcpSocket::Close	GGLib/NetWork/GGTCPSocket.h	/^	void Close(SOCKET sockfd);$/;"	p	language:C++	class:GGTcpSocket	access:protected	signature:(SOCKET sockfd)
+GGTcpSocket::Close	GGLib/NetWork/GGTCPSocket.cpp~	/^void GGTcpSocket::Close(SOCKET sockfd)$/;"	f	language:C++	class:GGTcpSocket	signature:(SOCKET sockfd)
+GGTcpSocket::Close	GGLib/NetWork/GGTCPSocket.h	/^	void Close(SOCKET sockfd);$/;"	p	language:C++	class:GGTcpSocket	access:public	signature:(SOCKET sockfd)
+GGTcpSocket::Close	GGLib/NetWork/GGTCPSocket.h~	/^	void Close(SOCKET sockfd);$/;"	p	language:C++	class:GGTcpSocket	file:	access:protected	signature:(SOCKET sockfd)
 GGTcpSocket::Connect	GGLib/NetWork/GGTCPSocket.cpp	/^bool GGTcpSocket::Connect(GGNetAddr& rAddr)$/;"	f	language:C++	class:GGTcpSocket	signature:(GGNetAddr& rAddr)
+GGTcpSocket::Connect	GGLib/NetWork/GGTCPSocket.cpp~	/^bool GGTcpSocket::Connect(GGNetAddr& rAddr)$/;"	f	language:C++	class:GGTcpSocket	signature:(GGNetAddr& rAddr)
 GGTcpSocket::Connect	GGLib/NetWork/GGTCPSocket.h	/^	virtual bool Connect() { return true; }$/;"	f	language:C++	class:GGTcpSocket	access:public	signature:()
 GGTcpSocket::Connect	GGLib/NetWork/GGTCPSocket.h	/^	virtual bool Connect(GGNetAddr& rAddr);$/;"	p	language:C++	class:GGTcpSocket	access:public	signature:(GGNetAddr& rAddr)
+GGTcpSocket::Connect	GGLib/NetWork/GGTCPSocket.h~	/^	virtual bool Connect() { return true; }$/;"	f	language:C++	class:GGTcpSocket	access:public	signature:()
+GGTcpSocket::Connect	GGLib/NetWork/GGTCPSocket.h~	/^	virtual bool Connect(GGNetAddr& rAddr);$/;"	p	language:C++	class:GGTcpSocket	file:	access:public	signature:(GGNetAddr& rAddr)
 GGTcpSocket::Create	GGLib/NetWork/GGTCPSocket.cpp	/^bool GGTcpSocket::Create()$/;"	f	language:C++	class:GGTcpSocket	signature:()
+GGTcpSocket::Create	GGLib/NetWork/GGTCPSocket.cpp~	/^bool GGTcpSocket::Create()$/;"	f	language:C++	class:GGTcpSocket	signature:()
 GGTcpSocket::Create	GGLib/NetWork/GGTCPSocket.h	/^	virtual bool Create();$/;"	p	language:C++	class:GGTcpSocket	access:public	signature:()
+GGTcpSocket::Create	GGLib/NetWork/GGTCPSocket.h~	/^	virtual bool Create();$/;"	p	language:C++	class:GGTcpSocket	file:	access:public	signature:()
 GGTcpSocket::GGTcpSocket	GGLib/NetWork/GGTCPSocket.h	/^	GGTcpSocket(){}$/;"	f	language:C++	class:GGTcpSocket	access:public	signature:()
+GGTcpSocket::GGTcpSocket	GGLib/NetWork/GGTCPSocket.h~	/^	GGTcpSocket(){}$/;"	f	language:C++	class:GGTcpSocket	access:public	signature:()
 GGTcpSocket::Initialize	GGLib/NetWork/GGTCPSocket.h	/^	virtual bool Initialize(){ return true; }$/;"	f	language:C++	class:GGTcpSocket	access:public	signature:()
+GGTcpSocket::Initialize	GGLib/NetWork/GGTCPSocket.h~	/^	virtual bool Initialize(){ return true; }$/;"	f	language:C++	class:GGTcpSocket	access:public	signature:()
 GGTcpSocket::Listen	GGLib/NetWork/GGTCPSocket.cpp	/^bool GGTcpSocket::Listen(int iBacklog)$/;"	f	language:C++	class:GGTcpSocket	signature:(int iBacklog)
+GGTcpSocket::Listen	GGLib/NetWork/GGTCPSocket.cpp~	/^bool GGTcpSocket::Listen(int iBacklog)$/;"	f	language:C++	class:GGTcpSocket	signature:(int iBacklog)
 GGTcpSocket::Listen	GGLib/NetWork/GGTCPSocket.h	/^	virtual bool Listen(){ return true; }$/;"	f	language:C++	class:GGTcpSocket	access:public	signature:()
 GGTcpSocket::Listen	GGLib/NetWork/GGTCPSocket.h	/^	virtual bool Listen(int iBacklog);$/;"	p	language:C++	class:GGTcpSocket	access:public	signature:(int iBacklog)
+GGTcpSocket::Listen	GGLib/NetWork/GGTCPSocket.h~	/^	virtual bool Listen(){ return true; }$/;"	f	language:C++	class:GGTcpSocket	access:public	signature:()
+GGTcpSocket::Listen	GGLib/NetWork/GGTCPSocket.h~	/^	virtual bool Listen(int iBacklog);$/;"	p	language:C++	class:GGTcpSocket	file:	access:public	signature:(int iBacklog)
 GGTcpSocket::Recv	GGLib/NetWork/GGTCPSocket.cpp	/^bool GGTcpSocket::Recv()$/;"	f	language:C++	class:GGTcpSocket	signature:()
+GGTcpSocket::Recv	GGLib/NetWork/GGTCPSocket.cpp~	/^bool GGTcpSocket::Recv()$/;"	f	language:C++	class:GGTcpSocket	signature:()
 GGTcpSocket::Recv	GGLib/NetWork/GGTCPSocket.h	/^	bool Recv();$/;"	p	language:C++	class:GGTcpSocket	access:public	signature:()
+GGTcpSocket::Recv	GGLib/NetWork/GGTCPSocket.h~	/^	bool Recv();$/;"	p	language:C++	class:GGTcpSocket	file:	access:public	signature:()
 GGTcpSocket::Send	GGLib/NetWork/GGTCPSocket.cpp	/^bool GGTcpSocket::Send()$/;"	f	language:C++	class:GGTcpSocket	signature:()
+GGTcpSocket::Send	GGLib/NetWork/GGTCPSocket.cpp~	/^bool GGTcpSocket::Send()$/;"	f	language:C++	class:GGTcpSocket	signature:()
 GGTcpSocket::Send	GGLib/NetWork/GGTCPSocket.h	/^	bool Send();$/;"	p	language:C++	class:GGTcpSocket	access:public	signature:()
+GGTcpSocket::Send	GGLib/NetWork/GGTCPSocket.h~	/^	bool Send();$/;"	p	language:C++	class:GGTcpSocket	file:	access:public	signature:()
+GGTcpSocket::SetBlock	GGLib/NetWork/GGTCPSocket.cpp	/^bool GGTcpSocket::SetBlock(bool bBlocking)$/;"	f	language:C++	class:GGTcpSocket	signature:(bool bBlocking)
+GGTcpSocket::SetBlock	GGLib/NetWork/GGTCPSocket.cpp~	/^bool GGTcpSocket::SetBlock(bool bBlocking)$/;"	f	language:C++	class:GGTcpSocket	signature:(bool bBlocking)
+GGTcpSocket::SetBlock	GGLib/NetWork/GGTCPSocket.h	/^    bool SetBlock(bool bBlocking);$/;"	p	language:C++	class:GGTcpSocket	access:public	signature:(bool bBlocking)
 GGTcpSocket::~GGTcpSocket	GGLib/NetWork/GGTCPSocket.h	/^	virtual ~GGTcpSocket(){}$/;"	f	language:C++	class:GGTcpSocket	access:public	signature:()
+GGTcpSocket::~GGTcpSocket	GGLib/NetWork/GGTCPSocket.h~	/^	virtual ~GGTcpSocket(){}$/;"	f	language:C++	class:GGTcpSocket	access:public	signature:()
 GGTestThread	TestServer/ThreadTest.h	/^		GGTestThread(){}$/;"	f	language:C++	class:GGTestThread	access:public	signature:()
 GGTestThread	TestServer/ThreadTest.h	/^class GGTestThread : public GGThread$/;"	c	language:C++	inherits:GGThread
 GGTestThread::GGTestThread	TestServer/ThreadTest.h	/^		GGTestThread(){}$/;"	f	language:C++	class:GGTestThread	access:public	signature:()
@@ -158,15 +210,21 @@ I	GGLib.sdf	/^/;"	v	language:C++
 INVALID_SOCKET	GGLib/NetWork/NetDefine.h	12;"	d	language:C++
 Initialize	GGLib/NetWork/GGSocket.h	/^		virtual bool Initialize()=0;$/;"	p	language:C++	class:GGSocket	access:public	signature:()
 Initialize	GGLib/NetWork/GGTCPSocket.h	/^	virtual bool Initialize(){ return true; }$/;"	f	language:C++	class:GGTcpSocket	access:public	signature:()
+Initialize	GGLib/NetWork/GGTCPSocket.h~	/^	virtual bool Initialize(){ return true; }$/;"	f	language:C++	class:GGTcpSocket	access:public	signature:()
 Listen	GGLib/NetWork/GGSocket.h	/^		virtual bool Listen() = 0;$/;"	p	language:C++	class:GGSocket	access:public	signature:()
 Listen	GGLib/NetWork/GGTCPSocket.cpp	/^bool GGTcpSocket::Listen(int iBacklog)$/;"	f	language:C++	class:GGTcpSocket	signature:(int iBacklog)
+Listen	GGLib/NetWork/GGTCPSocket.cpp~	/^bool GGTcpSocket::Listen(int iBacklog)$/;"	f	language:C++	class:GGTcpSocket	signature:(int iBacklog)
 Listen	GGLib/NetWork/GGTCPSocket.h	/^	virtual bool Listen(){ return true; }$/;"	f	language:C++	class:GGTcpSocket	access:public	signature:()
 Listen	GGLib/NetWork/GGTCPSocket.h	/^	virtual bool Listen(int iBacklog);$/;"	p	language:C++	class:GGTcpSocket	access:public	signature:(int iBacklog)
+Listen	GGLib/NetWork/GGTCPSocket.h~	/^	virtual bool Listen(){ return true; }$/;"	f	language:C++	class:GGTcpSocket	access:public	signature:()
+Listen	GGLib/NetWork/GGTCPSocket.h~	/^	virtual bool Listen(int iBacklog);$/;"	p	language:C++	class:GGTcpSocket	file:	access:public	signature:(int iBacklog)
 OnConsoleCmd	GGLib/Platform/GGServer.cpp	/^void GGServer::OnConsoleCmd(const std::string& strcmd)$/;"	f	language:C++	class:GGServer	signature:(const std::string& strcmd)
 OnConsoleCmd	GGLib/Platform/GGServer.h	/^        void OnConsoleCmd(const std::string& cmdstr);$/;"	p	language:C++	class:GGServer	access:protected	signature:(const std::string& cmdstr)
 Qh	GGLib/Debug/GGTCPSocket.obj	/^/;"	v	language:C++
 Recv	GGLib/NetWork/GGTCPSocket.cpp	/^bool GGTcpSocket::Recv()$/;"	f	language:C++	class:GGTcpSocket	signature:()
+Recv	GGLib/NetWork/GGTCPSocket.cpp~	/^bool GGTcpSocket::Recv()$/;"	f	language:C++	class:GGTcpSocket	signature:()
 Recv	GGLib/NetWork/GGTCPSocket.h	/^	bool Recv();$/;"	p	language:C++	class:GGTcpSocket	access:public	signature:()
+Recv	GGLib/NetWork/GGTCPSocket.h~	/^	bool Recv();$/;"	p	language:C++	class:GGTcpSocket	file:	access:public	signature:()
 Run	GGLib/Platform/GGServer.cpp	/^void GGServer::Run()$/;"	f	language:C++	class:GGServer	signature:()
 Run	GGLib/Platform/GGServer.h	/^		virtual void Run();$/;"	p	language:C++	class:GGServer	access:public	signature:()
 Run	GGLib/Utility/GGThread.h	/^		virtual void Run()$/;"	f	language:C++	class:GGThread	access:public	signature:()
@@ -176,10 +234,19 @@ RunOnce	TestServer/TestServer.cpp	/^	ggtt.RunOnce();$/;"	p	language:C++	file:	si
 SOCKET	GGLib/NetWork/NetDefine.h	/^typedef int SOCKET;$/;"	t	language:C++
 SOCKET_ERROR	GGLib/NetWork/NetDefine.h	11;"	d	language:C++
 Send	GGLib/NetWork/GGTCPSocket.cpp	/^bool GGTcpSocket::Send()$/;"	f	language:C++	class:GGTcpSocket	signature:()
+Send	GGLib/NetWork/GGTCPSocket.cpp~	/^bool GGTcpSocket::Send()$/;"	f	language:C++	class:GGTcpSocket	signature:()
 Send	GGLib/NetWork/GGTCPSocket.h	/^	bool Send();$/;"	p	language:C++	class:GGTcpSocket	access:public	signature:()
+Send	GGLib/NetWork/GGTCPSocket.h~	/^	bool Send();$/;"	p	language:C++	class:GGTcpSocket	file:	access:public	signature:()
 SetAddr	GGLib/NetWork/NetAddr.cpp	/^void GGNetAddr::SetAddr(const std::string& rsIP, const std::string& rsPort)$/;"	f	language:C++	class:GGNetAddr	signature:(const std::string& rsIP, const std::string& rsPort)
 SetAddr	GGLib/NetWork/NetAddr.h	/^		void SetAddr(const std::string& rsIP, const std::string& rsPort);$/;"	p	language:C++	class:GGNetAddr	access:public	signature:(const std::string& rsIP, const std::string& rsPort)
+SetBlock	GGLib/NetWork/.GGTCPSocket.h.un~	/^protected:5Å_–/;"	p	language:C++	file:	signature:(bool btrue)
+SetBlock	GGLib/NetWork/.GGTCPSocket.h.un~	/^r‹Ú∏ÿñı˚2ß;°º§/;"	p	language:C++	file:	signature:(bool bBlocking )
+SetBlock	GGLib/NetWork/GGTCPSocket.cpp	/^bool GGTcpSocket::SetBlock(bool bBlocking)$/;"	f	language:C++	class:GGTcpSocket	signature:(bool bBlocking)
+SetBlock	GGLib/NetWork/GGTCPSocket.cpp~	/^bool GGTcpSocket::SetBlock(bool bBlocking)$/;"	f	language:C++	class:GGTcpSocket	signature:(bool bBlocking)
+SetBlock	GGLib/NetWork/GGTCPSocket.h	/^    bool SetBlock(bool bBlocking);$/;"	p	language:C++	class:GGTcpSocket	access:public	signature:(bool bBlocking)
+SetNonBlock	GGLib/NetWork/.GGTCPSocket.h.un~	/^protected:5Å_–/;"	p	language:C++	file:	signature:(bool btrue)
 W	GGLib/Debug/GGTCPSocket.obj	/^/;"	v	language:C++
+W	GGLib/NetWork/.GGTCPSocket.h.un~	/^protected:5Å_–/;"	v	language:C++
 WIN32	GGLib/GGLib.vcxproj	/^      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)<\/PreprocessorDefinitions>$/;"	v	language:C++
 WIN32	GGLib/GGLib.vcxproj	/^      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)<\/PreprocessorDefinitions>$/;"	v	language:C++
 WIN32	TestServer/TestServer.vcxproj	/^      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)<\/PreprocessorDefinitions>$/;"	v	language:C++
@@ -190,20 +257,22 @@ _Accept	GGLib/Platform/GGServer.h	/^		bool _Accept();$/;"	p	language:C++	class:G
 _AssignAddr	GGLib/NetWork/NetAddr.cpp	/^void GGNetAddr::_AssignAddr(const std::string& rsIP, const std::string& rsPort)$/;"	f	language:C++	class:GGNetAddr	signature:(const std::string& rsIP, const std::string& rsPort)
 _AssignAddr	GGLib/NetWork/NetAddr.h	/^		void _AssignAddr(const std::string& rsIP, const std::string& rsPort);$/;"	p	language:C++	class:GGNetAddr	access:protected	signature:(const std::string& rsIP, const std::string& rsPort)
 _CleanUp	GGLib/NetWork/GGNetInit.h	/^		bool _CleanUp()$/;"	f	language:C++	class:GGNetInit	access:protected	signature:()
-_CleanUp	tags	/^~GGNetInit	GGLib\/NetWork\/GGNetInit.h	\/^		virtual ~GGNetInit(){ _CleanUp(); }$\/;"	f	language:C++	class:GGNetInit	access:public	signature:()$/;"	p	language:C++	class:__anon19	file:	access:private	signature:()
+_CleanUp	tags	/^~GGNetInit	GGLib\/NetWork\/GGNetInit.h	\/^		virtual ~GGNetInit(){ _CleanUp(); }$\/;"	f	language:C++	class:GGNetInit	access:public	signature:()$/;"	p	language:C++	class:__anon25	file:	access:private	signature:()
 _InitAddr	GGLib/NetWork/NetAddr.h	/^		void _InitAddr(){ memset(&m_sockaddr, 0, sizeof(m_sockaddr));}$/;"	f	language:C++	class:GGNetAddr	access:protected	signature:()
 _Initialize	GGLib/NetWork/GGNetInit.h	/^		bool _Initialize()$/;"	f	language:C++	class:GGNetInit	access:protected	signature:()
-_Initialize	tags	/^GGNetInit	GGLib\/NetWork\/GGNetInit.h	\/^		GGNetInit(){ _Initialize(); }$\/;"	f	language:C++	class:GGNetInit	access:public	signature:()$/;"	p	language:C++	class:__anon18	file:	access:private	signature:()
-__anon11::memset	tags	/^_InitAddr	GGLib\/NetWork\/NetAddr.h	\/^		void _InitAddr(){ memset(&m_sockaddr, 0, sizeof(m_sockaddr));}$\/;"	f	language:C++	class:GGNetAddr	access:protected	signature:()$/;"	m	language:C++	class:__anon11	file:	access:private
-__anon18::_Initialize	tags	/^GGNetInit	GGLib\/NetWork\/GGNetInit.h	\/^		GGNetInit(){ _Initialize(); }$\/;"	f	language:C++	class:GGNetInit	access:public	signature:()$/;"	p	language:C++	class:__anon18	file:	access:private	signature:()
-__anon19::_CleanUp	tags	/^~GGNetInit	GGLib\/NetWork\/GGNetInit.h	\/^		virtual ~GGNetInit(){ _CleanUp(); }$\/;"	f	language:C++	class:GGNetInit	access:public	signature:()$/;"	p	language:C++	class:__anon19	file:	access:private	signature:()
+_Initialize	tags	/^GGNetInit	GGLib\/NetWork\/GGNetInit.h	\/^		GGNetInit(){ _Initialize(); }$\/;"	f	language:C++	class:GGNetInit	access:public	signature:()$/;"	p	language:C++	class:__anon24	file:	access:private	signature:()
+__anon17::memset	tags	/^_InitAddr	GGLib\/NetWork\/NetAddr.h	\/^		void _InitAddr(){ memset(&m_sockaddr, 0, sizeof(m_sockaddr));}$\/;"	f	language:C++	class:GGNetAddr	access:protected	signature:()$/;"	m	language:C++	class:__anon17	file:	access:private
+__anon24::_Initialize	tags	/^GGNetInit	GGLib\/NetWork\/GGNetInit.h	\/^		GGNetInit(){ _Initialize(); }$\/;"	f	language:C++	class:GGNetInit	access:public	signature:()$/;"	p	language:C++	class:__anon24	file:	access:private	signature:()
+__anon25::_CleanUp	tags	/^~GGNetInit	GGLib\/NetWork\/GGNetInit.h	\/^		virtual ~GGNetInit(){ _CleanUp(); }$\/;"	f	language:C++	class:GGNetInit	access:public	signature:()$/;"	p	language:C++	class:__anon25	file:	access:private	signature:()
 __anon5::join	tags	/^GGThread::~GGThread	GGLib\/Utility\/GGThread.h	\/^		virtual ~GGThread(){ if (m_ggthread.joinable()){ m_ggthread.join(); } }$\/;"	f	language:C++	class:GGThread	access:public	signature:()$/;"	p	language:C++	file:	signature:()
+background	.vimrcbk	/^set background=dark$/;"	v	language:C++
 bad_cast	GGLib/Debug/GGTCPSocket.obj	/^/;"	m	language:C++	class:std	file:
 e	GGLib/Debug/vc120.idb	/^/;"	v	language:C++
 endl	GGLib/NetWork/GGNetInit.h	/^			std::cout << __FUNCTION__ << endl;$/;"	l	language:C++
 endl	GGLib/NetWork/GGNetInit.h	/^			std::cout<<__FUNCTION__<<endl;$/;"	l	language:C++
 endl	TestServer/TestServer.cpp	/^	cout <<__FUNCTION__<< endl;$/;"	l	language:C++
 endl	TestServer/ThreadTest.h	/^                std::cout << __FUNCTION__ << std::endl;$/;"	m	language:C++	class:GGTestThread::std
+epoll_fd	GGLib/NetWork/GGEpollSession.h	/^       int epoll_fd;$/;"	m	language:C++	class:GGEpollSession	access:private
 errCode	GGLib/NetWork/GGNetInit.h	/^				int errCode;$/;"	l	language:C++
 format	tags	/^!_TAG_FILE_FORMAT	2	\/extended format; --format=1 will not append ;" to lines\/$/;"	v	language:C++
 ggPort	GGLib/NetWork/NetDefine.h	/^typedef  u_short ggPort;$/;"	t	language:C++
@@ -214,6 +283,9 @@ iErrCode	GGLib/NetWork/GGNetInit.h	/^			int iErrCode=WSACleanup();$/;"	l	languag
 iRet	GGLib/NetWork/GGTCPSocket.cpp	/^	int iRet = bind(m_socket, (sockaddr*)rAddr, sizeof(rAddr));$/;"	l	language:C++
 iRet	GGLib/NetWork/GGTCPSocket.cpp	/^	int iRet = connect(m_socket, (sockaddr*)(rAddr), sizeof(rAddr));$/;"	l	language:C++
 iRet	GGLib/NetWork/GGTCPSocket.cpp	/^	int iRet = listen(m_socket,iBacklog);$/;"	l	language:C++
+iRet	GGLib/NetWork/GGTCPSocket.cpp~	/^	int iRet = bind(m_socket, (sockaddr*)rAddr, sizeof(rAddr));$/;"	l	language:C++
+iRet	GGLib/NetWork/GGTCPSocket.cpp~	/^	int iRet = connect(m_socket, (sockaddr*)(rAddr), sizeof(rAddr));$/;"	l	language:C++
+iRet	GGLib/NetWork/GGTCPSocket.cpp~	/^	int iRet = listen(m_socket,iBacklog);$/;"	l	language:C++
 iRet	GGLib/NetWork/NetAddr.cpp	/^	int iRet = getaddrinfo(rsIP.c_str(), rsPort.c_str(), NULL, &pResult);$/;"	l	language:C++
 iejr	TestServer/Debug/vc120.idb	/^/;"	v	language:C++
 j	TestServer/Debug/vc120.idb	/^/;"	v	language:C++
@@ -228,7 +300,7 @@ m_sockaddr	GGLib/NetWork/NetAddr.h	/^		sockaddr_in m_sockaddr;$/;"	m	language:C+
 m_sockaddrV6	GGLib/NetWork/NetAddr.h	/^		sockaddr_in6 m_sockaddrV6;$/;"	m	language:C++	class:GGNetAddr	access:protected
 m_socket	GGLib/NetWork/GGSocket.h	/^		SOCKET m_socket;$/;"	m	language:C++	class:GGSocket	access:protected
 main	TestServer/TestServer.cpp	/^int main( )$/;"	f	language:C++	signature:( )
-memset	tags	/^_InitAddr	GGLib\/NetWork\/NetAddr.h	\/^		void _InitAddr(){ memset(&m_sockaddr, 0, sizeof(m_sockaddr));}$\/;"	f	language:C++	class:GGNetAddr	access:protected	signature:()$/;"	m	language:C++	class:__anon11	file:	access:private
+memset	tags	/^_InitAddr	GGLib\/NetWork\/NetAddr.h	\/^		void _InitAddr(){ memset(&m_sockaddr, 0, sizeof(m_sockaddr));}$\/;"	f	language:C++	class:GGNetAddr	access:protected	signature:()$/;"	m	language:C++	class:__anon17	file:	access:private
 netaddr	TestServer/TestServer.cpp	/^	GGNetAddr netaddr(sIP, sPort);$/;"	p	language:C++	file:	signature:(sIP, sPort)
 operator struct sockaddr*	GGLib/NetWork/NetAddr.cpp	/^GGNetAddr::operator struct sockaddr* () const$/;"	f	language:C++	class:GGNetAddr	signature:() const
 operator struct sockaddr*	GGLib/NetWork/NetAddr.h	/^		operator struct sockaddr* () const;$/;"	p	language:C++	class:GGNetAddr	access:public	signature:() const
@@ -236,12 +308,14 @@ operator struct sockaddr_in*	GGLib/NetWork/NetAddr.cpp	/^GGNetAddr::operator str
 operator struct sockaddr_in*	GGLib/NetWork/NetAddr.h	/^		operator struct sockaddr_in* () const;$/;"	p	language:C++	class:GGNetAddr	access:public	signature:() const
 pCurrent	GGLib/NetWork/NetAddr.cpp	/^	addrinfo *pResult,*pCurrent;$/;"	l	language:C++
 pResult	GGLib/NetWork/NetAddr.cpp	/^	addrinfo *pResult,*pCurrent;$/;"	l	language:C++
+r	GGLib/NetWork/.GGTCPSocket.h.un~	/^r‹Ú∏ÿñı˚2ß;°º§/;"	v	language:C++
 sListenSock	TestServer/TestServer.cpp	/^	GGTcpSocket sListenSock;$/;"	l	language:C++
 std::bad_cast	GGLib/Debug/GGTCPSocket.obj	/^/;"	m	language:C++	class:std	file:
 stobj	GGLib/Utility/GGSingleton.h	/^			static T stobj;$/;"	l	language:C++
 threadtest	TestServer/TestServer.cpp	/^void threadtest()$/;"	f	language:C++	signature:()
 wData	GGLib/NetWork/GGNetInit.h	/^				WSADATA wData;$/;"	l	language:C++
 wVersionReq	GGLib/NetWork/GGNetInit.h	/^				WORD wVersionReq = MAKEWORD(2, 2);$/;"	l	language:C++
+~GGEpollSession	GGLib/NetWork/GGEpollSession.h	/^         ~GGEpollSession();$/;"	p	language:C++	class:GGEpollSession	access:public	signature:()
 ~GGNetAddr	GGLib/NetWork/NetAddr.cpp	/^GGNetAddr::~GGNetAddr()$/;"	f	language:C++	class:GGNetAddr	signature:()
 ~GGNetAddr	GGLib/NetWork/NetAddr.h	/^		virtual ~GGNetAddr();$/;"	p	language:C++	class:GGNetAddr	access:public	signature:()
 ~GGNetInit	GGLib/NetWork/GGNetInit.h	/^		virtual ~GGNetInit(){ _CleanUp(); }$/;"	f	language:C++	class:GGNetInit	access:public	signature:()
@@ -249,6 +323,7 @@ wVersionReq	GGLib/NetWork/GGNetInit.h	/^				WORD wVersionReq = MAKEWORD(2, 2);$/
 ~GGSingleton	GGLib/Utility/GGSingleton.h	/^		virtual ~GGSingleton(){}$/;"	f	language:C++	class:GGSingleton	access:public	signature:()
 ~GGSocket	GGLib/NetWork/GGSocket.h	/^		virtual ~GGSocket(){}$/;"	f	language:C++	class:GGSocket	access:public	signature:()
 ~GGTcpSocket	GGLib/NetWork/GGTCPSocket.h	/^	virtual ~GGTcpSocket(){}$/;"	f	language:C++	class:GGTcpSocket	access:public	signature:()
+~GGTcpSocket	GGLib/NetWork/GGTCPSocket.h~	/^	virtual ~GGTcpSocket(){}$/;"	f	language:C++	class:GGTcpSocket	access:public	signature:()
 ~GGTestThread	TestServer/ThreadTest.h	/^		virtual ~GGTestThread(){}$/;"	f	language:C++	class:GGTestThread	access:public	signature:()
 ~GGThread	GGLib/Utility/GGThread.h	/^		virtual ~GGThread(){ if (m_ggthread.joinable()){ m_ggthread.join(); } }$/;"	f	language:C++	class:GGThread	access:public	signature:()
 ~GGThread	tags	/^GGThread::join	GGLib\/Utility\/GGThread.h	\/^		virtual ~GGThread(){ if (m_ggthread.joinable()){ m_ggthread.join(); } }$\/;"	p	language:C++	signature:()$/;"	f	language:C++	signature:()
