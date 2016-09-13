@@ -18,7 +18,7 @@ bool GGTcpSocket::Bind(GGNetAddr& rAddr)
 	if (iRet == SOCKET_ERROR)
 	{
 		
-		Close(m_socket);
+		Close();
 		return false;
 	}
 	return true;
@@ -29,7 +29,7 @@ bool GGTcpSocket::Listen(int iBacklog)
 
 	if (iRet == SOCKET_ERROR)
 	{
-		Close(m_socket);
+		Close();
 		return false;
 	}
 	return true;
@@ -39,7 +39,7 @@ bool GGTcpSocket::Connect(GGNetAddr& rAddr)
 	int iRet = connect(m_socket, (sockaddr*)(rAddr), sizeof(rAddr));
 	if (iRet == SOCKET_ERROR)
 	{
-		Close(m_socket);
+		Close();
 		return false;
 	}
 	return true;
@@ -49,7 +49,7 @@ bool GGTcpSocket::Accept(GGTcpSocket& rSock)
 	rSock.m_socket= accept(m_socket, NULL, NULL);
 	if (rSock.m_socket == INVALID_SOCKET)
 	{
-		Close(m_socket);
+		Close();
 		return false;
 	}
 	return true;
@@ -63,12 +63,12 @@ bool GGTcpSocket::Recv()
 	return true;
 }
 
-void GGTcpSocket::Close(SOCKET sockfd)
+void GGTcpSocket::Close()
 {
 	#ifdef _WIN32
-		closesocket(sockfd);
+		closesocket(m_socket);
 	#else
-		close(sockfd);
+		close(m_socket);
 	#endif
 }
 

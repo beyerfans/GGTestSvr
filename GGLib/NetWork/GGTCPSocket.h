@@ -26,7 +26,7 @@ public:
 	bool Send();
 	bool Recv();
 
-	void Close(SOCKET sockfd);
+	void Close();
 
 	
 };
