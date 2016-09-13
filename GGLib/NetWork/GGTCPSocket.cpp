@@ -1,5 +1,10 @@
 #include "GGTCPSocket.h"
+
+#ifdef _WIN32
+
+#else
 #include <unistd.h>
+#endif
 
 bool GGTcpSocket::Create()
 {
@@ -76,6 +81,19 @@ bool GGTcpSocket::SetBlock(bool bBlocking)
 {
     #ifdef _WIN32
 
+	u_long uFlag = (u_long)bBlocking;
+
+	int iResult = ioctlsocket(m_socket, FIONBIO, (u_long*)&uFlag);
+	if (iResult != 0)
+	{
+		//Todo: Add error message
+		return false;
+	}
+	else
+	{
+		return true;
+	}
+
     #else
     
     int iflags=fnctl(m_socket,F_GETFL);
@@ -88,5 +106,5 @@ bool GGTcpSocket::SetBlock(bool bBlocking)
         iflags=bBlocking?iflags&~O_NONBLOCK:iflags|O_NONBLOCK;
         return fnctl(m_socket,F_SETFL,iflags)==0?true:false;        
     }
-    #endif    
+    #endif    	
 }

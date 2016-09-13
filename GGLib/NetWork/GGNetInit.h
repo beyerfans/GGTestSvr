@@ -12,7 +12,7 @@ class GGNetInit
 		{
 			
 #ifdef _DEBUG
-			std::cout<<__FUNCTION__<<endl;
+			std::cout<<__FUNCTION__<<std::endl;
 #endif
 
 			#ifdef _WIN32
@@ -44,7 +44,7 @@ class GGNetInit
 		bool _CleanUp()
 		{
 #ifdef _DEBUG
-			std::cout << __FUNCTION__ << endl;
+			std::cout << __FUNCTION__ <<std::endl;
 #endif
 			#ifdef _WIN32
 

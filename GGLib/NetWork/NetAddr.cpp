@@ -1,5 +1,4 @@
-
-//#include <ws2tcpip.h>
+#include "NetDefine.h"
 #include <string.h>
 #include "NetAddr.h"
 

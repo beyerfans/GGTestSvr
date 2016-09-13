@@ -3,6 +3,7 @@
 
 #ifdef _WIN32
 #include <WinSock2.h>
+#include <ws2tcpip.h>
 typedef  u_short ggPort;
 #else
 typedef unsigned short ggPort;
