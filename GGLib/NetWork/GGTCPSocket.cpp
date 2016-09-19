@@ -6,6 +6,12 @@
 #include <unistd.h>
 #endif
 
+GGTcpSocket::~GGTcpSocket()
+{
+	Close();
+}
+
+
 bool GGTcpSocket::Create()
 {
 	m_socket = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);

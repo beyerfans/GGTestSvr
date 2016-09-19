@@ -8,7 +8,7 @@ class GGTcpSocket :public GGSocket
 public:
 
 	GGTcpSocket(){}
-	virtual ~GGTcpSocket(){}
+	virtual ~GGTcpSocket();
 
 	virtual bool Initialize(){ return true; }
 	virtual bool Create();
@@ -25,7 +25,6 @@ public:
 	bool Accept(GGTcpSocket& rSock);
 	bool Send();
 	bool Recv();
-
 	void Close();
 
 	

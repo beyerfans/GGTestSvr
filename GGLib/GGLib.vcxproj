@@ -82,14 +82,17 @@
     <ClInclude Include="NetWork\NetAddr.h" />
     <ClInclude Include="NetWork\NetDefine.h" />
     <ClInclude Include="Platform\GGServer.h" />
+    <ClInclude Include="Utility\CustomType.h" />
     <ClInclude Include="Utility\GGSingleton.h" />
     <ClInclude Include="Utility\GGThread.h" />
+    <ClInclude Include="Utility\GGTimer.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="NetWork\GGTCPSocket.cpp" />
     <ClCompile Include="NetWork\NetAddr.cpp" />
     <ClCompile Include="Platform\GGServer.cpp" />
     <ClCompile Include="Utility\GGThread.cpp" />
+    <ClCompile Include="Utility\GGTimer.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

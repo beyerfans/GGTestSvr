@@ -17,6 +17,7 @@
 #include "../GGLib/Utility/GGSingleton.h"
 #include "../GGLib/Utility/GGThread.h"
 #include "../GGLib/NetWork/NetDefine.h"
+#include "../GGLib/Platform/GGServer.h"
 #include "ThreadTest.h"
 
 #pragma comment(lib,"../Debug/GGLib.lib")
@@ -38,16 +39,22 @@ int main( )
 	string sPort("9999");
 	GGNetAddr netaddr(sIP, sPort);
 
-	GGTcpSocket sListenSock;
-	if (sListenSock.Create() && sListenSock.Bind(netaddr))
-	{
-		sListenSock.Listen(5);
-	}
+	GGServer oserver;
+	oserver.AddListen(netaddr);
+	oserver.Run();
 
-	GGTestThread ggtt;	
-	ggtt.RunOnce();
 
-	HANDLE hThread = ggtt.Gethandle();	
+
+	//GGTcpSocket sListenSock;
+	//if (sListenSock.Create() && sListenSock.Bind(netaddr))
+	//{
+	//	sListenSock.Listen(5);
+	//}
+
+	//GGTestThread ggtt;	
+	//ggtt.RunOnce();
+
+	//HANDLE hThread = ggtt.Gethandle();	
 
 	return 0;
 }
