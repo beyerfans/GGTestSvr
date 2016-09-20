@@ -3,11 +3,15 @@
 
 #include "CustomType.h"
 #include <map>
+#include <chrono>
+
+using namespace std::chrono;
 
 struct stTimer
 {
-	uint64 uTime;
-	uint32 uInterval;
+	system_clock::time_point uTime;
+	uint32 uIntervalms;
+	bool bActive;
 };
 
 
@@ -15,8 +19,8 @@ class GGTimer
 {
 	public:
 
-		GGTimer();
-		~GGTimer();
+		GGTimer(){};
+		~GGTimer(){};
 
 		bool AddTimer(uint32 uTimerID, uint32 uInterval);
 		bool StopTimer(uint32 uTimerID);

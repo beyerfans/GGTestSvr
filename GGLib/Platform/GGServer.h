@@ -5,15 +5,16 @@
 #include "../NetWork/GGTCPSocket.h"
 #include "../Utility/GGThread.h"
 #include "../NetWork/NetAddr.h"
+#include "../Utility/GGTimer.h"
 
 #define REG_CMD_HANDLER(cmd,funHandle)\
-	m_CmdMap.insert(std::make_pair<std::string,pFunHandleCmd>(#cmd,&GGServer::##funHandle));
+	m_CmdMap.insert(std::make_pair(#cmd,&GGServer::##funHandle));
 
 class GGServer;
 typedef void (GGServer::*pFunHandleCmd)();
 
 
-class GGServer 
+class GGServer :public GGTimer
 {
 
 	
@@ -40,6 +41,8 @@ class GGServer
 
 		//TODO: Add console input handling      
 		virtual void _OnConsoleCmd(const std::string& cmdstr);
+
+		virtual bool OnTimer(uint32 uTimerID);
 
 
 		std::list<GGTcpSocket*> m_ListenSock;

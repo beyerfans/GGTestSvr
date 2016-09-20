@@ -1,5 +1,6 @@
 #include <string>
 #include "GGServer.h"
+#include "../CommonDef.h"
 
 
 GGServer::GGServer() :m_pInput(nullptr), m_bClose(false)
@@ -15,10 +16,13 @@ GGServer::~GGServer()
 bool GGServer::_Init()
 {
 	//register cmd handling function
-	REG_CMD_HANDLER(close, CloseServer);
-	
+	REG_CMD_HANDLER(close, CloseServer);	
 
 	m_pInput = new GGThread(&GGServer::ReadInput,this);
+
+	AddTimer(TIMERID_LISTEN_CHECK, cuListenCheck);
+	AddTimer(TIMERID_ACCEPT_CHECK, cuAcceptCheck);
+
 	return true;
 }
 
@@ -125,5 +129,29 @@ void GGServer::_OnConsoleCmd(const std::string& strcmd)
 void GGServer::_Close(int iSec)
 {
 
+
+}
+
+bool GGServer::OnTimer(uint32 uTimerID)
+{
+	switch (uTimerID)
+	{
+
+	case TIMERID_LISTEN_CHECK:
+	{
+
+
+	}
+	break;
+
+	case TIMERID_ACCEPT_CHECK:
+	{
+
+
+	}
+	break;
+	}
+
+	return true;
 
 }

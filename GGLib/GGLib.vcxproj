@@ -76,6 +76,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="CommonDef.h" />
     <ClInclude Include="NetWork\GGNetInit.h" />
     <ClInclude Include="NetWork\GGSocket.h" />
     <ClInclude Include="NetWork\GGTCPSocket.h" />
