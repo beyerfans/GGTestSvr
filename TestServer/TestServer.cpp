@@ -22,12 +22,9 @@
 
 #pragma comment(lib,"../Debug/GGLib.lib")
 
-using namespace std;
+std::string g_strConfFile = ".\\Config\\Server.ini";
 
-void threadtest()
-{
-	cout <<__FUNCTION__<< endl;
-}
+//using namespace std;
 
 
 int main( )
@@ -35,8 +32,18 @@ int main( )
 {
 	GGSingleton<GGNetInit>::GetInstance();
 
-	string sIP("localhost");
-	string sPort("9999");
+	char cListenIP[20] = { 0 };
+	char cListenPort[8] = { 0 };
+	
+
+	int count = GetPrivateProfileString("ServerConf", "ListenIP", "", cListenIP, 20, g_strConfFile.c_str());
+	count = GetPrivateProfileString("ServerConf", "ListenPort", "", cListenPort, 8, g_strConfFile.c_str());
+
+	int ierrno = GetLastError();
+
+	std::string sIP=cListenIP;
+	std::string sPort=cListenPort;
+
 	GGNetAddr netaddr(sIP, sPort);
 
 	GGServer oserver;

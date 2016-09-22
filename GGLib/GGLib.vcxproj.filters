@@ -66,6 +66,9 @@
     <ClInclude Include="CommonDef.h">
       <Filter>Header Files\Utilities</Filter>
     </ClInclude>
+    <ClInclude Include="Utility\ConfigReader.h">
+      <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="NetWork\NetAddr.cpp">

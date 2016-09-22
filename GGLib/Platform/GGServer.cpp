@@ -91,7 +91,7 @@ bool GGServer::AddListen(GGNetAddr& rAddr)
 
 bool GGServer::_Accept()
 {
-
+	
 
 	return true;
 }

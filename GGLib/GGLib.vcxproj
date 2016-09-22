@@ -83,6 +83,7 @@
     <ClInclude Include="NetWork\NetAddr.h" />
     <ClInclude Include="NetWork\NetDefine.h" />
     <ClInclude Include="Platform\GGServer.h" />
+    <ClInclude Include="Utility\ConfigReader.h" />
     <ClInclude Include="Utility\CustomType.h" />
     <ClInclude Include="Utility\GGSingleton.h" />
     <ClInclude Include="Utility\GGThread.h" />
