@@ -1,7 +1,7 @@
 #ifndef _COMMONDEF_H
 #define _COMMONDEF_H
 
-#include "..\Utility\CustomType.h"
+#include "../Utility/CustomType.h"
 
 enum eTimerID
 {

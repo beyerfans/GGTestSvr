@@ -8,7 +8,7 @@
 #include "../Utility/GGTimer.h"
 
 #define REG_CMD_HANDLER(cmd,funHandle)\
-	m_CmdMap.insert(std::make_pair(#cmd,&GGServer::##funHandle));
+	m_CmdMap.insert(std::make_pair(#cmd,&GGServer::funHandle));
 
 class GGServer;
 typedef void (GGServer::*pFunHandleCmd)();
