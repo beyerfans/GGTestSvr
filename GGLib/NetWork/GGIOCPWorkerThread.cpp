@@ -1,6 +1,13 @@
 #include "GGIOCPWorkerThread.h"
 
+
 void GGIOCPWorkThread::Run()
 {
-	GetQueuedCompletionStatus();
+	while (true)
+	{
+		GetQueuedCompletionStatus(m_hIOCP,;
+
+		std::this_thread::sleep_for(std::chrono::milliseconds(50));
+	}
+	
 }

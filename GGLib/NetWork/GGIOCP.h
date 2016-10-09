@@ -2,7 +2,9 @@
 #define _GGIOCP_H
 
 #include "NetDefine.h"
+#include "GGIOCPWorkerThread.h"
 
+#include <list>
 
 class GGIOCP
 {
@@ -11,13 +13,14 @@ class GGIOCP
 		~GGIOCP(){}
 
 		bool InitIOCP();
-		bool CreateIOCP();
+		bool AssociateWithSocket();
 		bool CloseIOCP();
 
-		bool CreateWorkThread();
+		bool CreateWorkThread(HANDLE hIOCP);
 
 	private:
-		HANDLE m_IOCP;
+		HANDLE m_hIOCP;
+		std::list<GGIOCPWorkThread*> m_WorkerThreadList;
 };
 
 
