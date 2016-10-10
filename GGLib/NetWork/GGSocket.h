@@ -7,6 +7,7 @@ class GGSocket
 	public:
 
 		GGSocket(){}
+		GGSocket(SOCKET sfd):m_socket(sfd){}
 		virtual ~GGSocket(){}
 
 		virtual bool Initialize()=0;
@@ -14,6 +15,9 @@ class GGSocket
 		virtual bool Bind() = 0;
 		virtual bool Listen() = 0;
 		virtual bool Connect() = 0;
+
+		SOCKET GetSocket() { return m_socket; }
+	
 
 	protected:
 

@@ -11,9 +11,9 @@ bool GGIOCP::InitIOCP()
 }
 
 
-bool GGIOCP::AssociateWithSocket()
+bool GGIOCP::AssociateWithSocket(SOCKET sfd)
 {
-	return true;
+	return (m_hIOCP = CreateIoCompletionPort((HANDLE)sfd, m_hIOCP, sfd, 0)) == NULL ? false : true;
 }
 
 bool GGIOCP::CloseIOCP()

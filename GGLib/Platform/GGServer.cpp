@@ -91,8 +91,39 @@ bool GGServer::AddListen(GGNetAddr& rAddr)
 
 bool GGServer::_Accept()
 {
-	
+	int iCount = 0;
+	fd_set sockset;
 
+	FD_ZERO(&sockset);
+
+	for (auto itListen = m_ListenSock.begin(); itListen != m_ListenSock.end(); ++itListen)
+	{
+		FD_SET(((*itListen)->GetSocket()), &sockset);
+	}
+
+	iCount=(m_ListenSock.size(), &sockset, nullptr, nullptr, 0);
+
+	for (auto itListen=m_ListenSock.begin(); itListen!=m_ListenSock.end(); ++itListen)
+	{
+		if (FD_ISSET(((*itListen)->GetSocket()), &sockset))
+		{
+			sockaddr saddr;
+			int addrlen=0;
+			SOCKET accsock=accept((*itListen)->GetSocket(), &saddr, &addrlen);
+
+			//push accepted socket to map
+
+			GGTcpSocket *pSocket =  new (std::nothrow) GGTcpSocket(accsock);
+			if (pSocket == nullptr)
+			{
+				return false;
+			}
+			else
+			{
+				m_AcceptSock.push_back(pSocket);
+			}
+		}
+	}
 	return true;
 }
 
@@ -146,8 +177,7 @@ bool GGServer::OnTimer(uint32 uTimerID)
 
 	case TIMERID_ACCEPT_CHECK:
 	{
-
-
+		_Accept();
 	}
 	break;
 	}

@@ -8,6 +8,7 @@ class GGTcpSocket :public GGSocket
 public:
 
 	GGTcpSocket(){}
+	GGTcpSocket(SOCKET sfd):GGSocket(sfd){}
 	virtual ~GGTcpSocket();
 
 	virtual bool Initialize(){ return true; }

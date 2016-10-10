@@ -13,10 +13,12 @@ class GGIOCP
 		~GGIOCP(){}
 
 		bool InitIOCP();
-		bool AssociateWithSocket();
+		bool AssociateWithSocket(SOCKET sfd);
 		bool CloseIOCP();
 
 		bool CreateWorkThread(HANDLE hIOCP);
+
+		HANDLE GetHandle() { return m_hIOCP; }
 
 	private:
 		HANDLE m_hIOCP;
