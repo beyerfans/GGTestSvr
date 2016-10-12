@@ -44,11 +44,16 @@ class GGServer :public GGTimer
 
 		virtual bool OnTimer(uint32 uTimerID);
 
+		virtual bool _ReadConfig(std::string& strConf);
+
+
 
 		std::list<GGTcpSocket*> m_ListenSock;
 		std::list<GGTcpSocket*> m_AcceptSock;	
 		std::unordered_map < std::string, pFunHandleCmd> m_CmdMap;
 		GGThread* m_pInput;
+		
+		GGNetAddr m_ListenAddr;
 
 		bool m_bClose;
 };

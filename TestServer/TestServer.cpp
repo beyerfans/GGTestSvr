@@ -22,7 +22,8 @@
 
 #pragma comment(lib,"../Debug/GGLib.lib")
 
-std::string g_strConfFile = ".\\Config\\Server.ini";
+//std::string g_strConfFile = "./Config/Server.ini";
+
 
 //using namespace std;
 
@@ -36,7 +37,7 @@ int main( )
 	char cListenPort[8] = { 0 };
 	
 
-	int count = GetPrivateProfileString("ServerConf", "ListenIP", "", cListenIP, 20, g_strConfFile.c_str());
+	/*int count = GetPrivateProfileString("ServerConf", "ListenIP", "", cListenIP, 20, g_strConfFile.c_str());
 	count = GetPrivateProfileString("ServerConf", "ListenPort", "", cListenPort, 8, g_strConfFile.c_str());
 
 	int ierrno = GetLastError();
@@ -44,10 +45,10 @@ int main( )
 	std::string sIP=cListenIP;
 	std::string sPort=cListenPort;
 
-	GGNetAddr netaddr(sIP, sPort);
+	GGNetAddr netaddr(sIP, sPort);*/
 
 	GGServer oserver;
-	oserver.AddListen(netaddr);
+	//oserver.AddListen(netaddr);
 	oserver.Run();
 
 

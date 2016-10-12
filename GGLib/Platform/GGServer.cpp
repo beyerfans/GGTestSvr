@@ -1,6 +1,12 @@
 #include <string>
 #include "GGServer.h"
 #include "../CommonDef.h"
+#include "../NetWork/GGNetInit.h"
+#include "../Utility/GGSingleton.h"
+
+#include "../../pugixml-1.7/src/pugixml.hpp"
+
+std::string g_strConfxml = "serverconf.xml";
 
 
 GGServer::GGServer() :m_pInput(nullptr), m_bClose(false)
@@ -15,6 +21,9 @@ GGServer::~GGServer()
 
 bool GGServer::_Init()
 {
+	//
+	GGSingleton<GGNetInit>::GetInstance();
+
 	//register cmd handling function
 	REG_CMD_HANDLER(close, CloseServer);	
 
@@ -22,6 +31,8 @@ bool GGServer::_Init()
 
 	AddTimer(TIMERID_LISTEN_CHECK, cuListenCheck);
 	AddTimer(TIMERID_ACCEPT_CHECK, cuAcceptCheck);
+
+	_ReadConfig(g_strConfxml);
 
 	return true;
 }
@@ -184,4 +195,28 @@ bool GGServer::OnTimer(uint32 uTimerID)
 
 	return true;
 
+}
+
+bool GGServer::_ReadConfig(std::string& strConf)
+{
+	pugi::xml_document doc;
+	pugi::xml_parse_result ret=doc.load_file(strConf.c_str());
+
+	if (ret.status != pugi::xml_parse_status::status_ok)
+	{
+		//parse failed
+		return false;
+	}
+	else
+	{
+		pugi::xml_node ipnode= doc.child("Gameserver").child("ListenIP");
+		pugi::xml_node portnode = doc.child("Gameserver").child("ListenPort");
+		std::string strIP(ipnode.text().as_string());
+		std::string strPort(portnode.text().as_string());
+
+		m_ListenAddr.SetAddr(strIP,  strPort);
+
+		return true;
+
+	}
 }
