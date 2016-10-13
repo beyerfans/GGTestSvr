@@ -1,15 +1,7 @@
-#include "HubServer.h"
+#include "GameServer.h"
 #include "../pugixml-1.7/src/pugixml.hpp"
 
-GGHubServer::GGHubServer()
-{
-}
-
-GGHubServer::~GGHubServer()
-{
-}
-
-bool GGHubServer::_ReadConfig(std::string & strConf)
+bool GameServer::_ReadConfig(std::string& strConf)
 {
 	pugi::xml_document doc;
 	pugi::xml_parse_result ret = doc.load_file(strConf.c_str());
@@ -21,14 +13,14 @@ bool GGHubServer::_ReadConfig(std::string & strConf)
 	}
 	else
 	{
-		pugi::xml_node ipnode = doc.child("HubServer").child("ListenIP");
-		pugi::xml_node portnode = doc.child("HubServer").child("ListenPort");
+		pugi::xml_node ipnode = doc.child("GameServer").child("ListenIP");
+		pugi::xml_node portnode = doc.child("GameServer").child("ListenPort");
 		std::string strIP(ipnode.text().as_string());
 		std::string strPort(portnode.text().as_string());
 
 		m_ListenAddr.SetAddr(strIP, strPort);
 
 		return true;
-
-	}	
+	}
 }
+

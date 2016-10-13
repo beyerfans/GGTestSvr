@@ -16,6 +16,12 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HubServer", "HubServer\HubS
 		{4B2BAAFD-0D3B-4791-8E52-A366C0E8595D} = {4B2BAAFD-0D3B-4791-8E52-A366C0E8595D}
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameServer", "GameServer\GameServer.vcxproj", "{D8FB6245-37AE-4FE4-8620-9D414BD98318}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E7F14465-A2B4-4A75-8F4D-32BBB289CC20} = {E7F14465-A2B4-4A75-8F4D-32BBB289CC20}
+		{4B2BAAFD-0D3B-4791-8E52-A366C0E8595D} = {4B2BAAFD-0D3B-4791-8E52-A366C0E8595D}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -46,6 +52,14 @@ Global
 		{1486884E-42B2-4032-BA26-A298E384D05D}.Release|Win32.Build.0 = Release|Win32
 		{1486884E-42B2-4032-BA26-A298E384D05D}.Release|x64.ActiveCfg = Release|x64
 		{1486884E-42B2-4032-BA26-A298E384D05D}.Release|x64.Build.0 = Release|x64
+		{D8FB6245-37AE-4FE4-8620-9D414BD98318}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D8FB6245-37AE-4FE4-8620-9D414BD98318}.Debug|Win32.Build.0 = Debug|Win32
+		{D8FB6245-37AE-4FE4-8620-9D414BD98318}.Debug|x64.ActiveCfg = Debug|x64
+		{D8FB6245-37AE-4FE4-8620-9D414BD98318}.Debug|x64.Build.0 = Debug|x64
+		{D8FB6245-37AE-4FE4-8620-9D414BD98318}.Release|Win32.ActiveCfg = Release|Win32
+		{D8FB6245-37AE-4FE4-8620-9D414BD98318}.Release|Win32.Build.0 = Release|Win32
+		{D8FB6245-37AE-4FE4-8620-9D414BD98318}.Release|x64.ActiveCfg = Release|x64
+		{D8FB6245-37AE-4FE4-8620-9D414BD98318}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
